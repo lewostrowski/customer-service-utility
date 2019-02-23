@@ -2,19 +2,32 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
     <title>CS utilities</title>
   </head>
   <body>
 
-    <!-- day count -->
-    <div class="div-count-day">
-      <form class="form-count-day">
-        <input id="input-count-day" name="daycount" placeholder="YYYY-MM-DD">
-        <button type="submit" name="btn-count-day">OK</button>
-      </form>
-      <div class="display-count-day"></div>
-    </div>
+    <h5>Skrypt liczący ilość dni od wystawienia komentarza do transakcji</h5>
 
+      <div class="info">
+        <p>NaN oznacza, że data została wprowadzona w złym formacie (lub nic nie wpisano).</p>
+        <p>Jeżeli minęło 90 dni od daty transakcji, liczba pozostałych dni będzie ujemna.</p>
+        <p>Skryp zawsze liczy czas od wpisanej daty do aktualnej daty (<span id="span-actual"></span>).</p>
+        <p>Skrypt akceptuje dwa formaty:</p>
+        <ul>
+          <li>DD.MM.YYYY (format daty w adminie "Wygrał"),</li>
+          <li>YYYY-MM-DD (format natywny dla skryptu).</li>
+        </ul>
+        <p>Skrypt korzysta z bibliotek <a href="https://momentjs.com/">moment.js</a>.</p>
+      </div>
+
+      <div class="div-count-day">
+        <form class="form-count-day">
+          <input id="input-count-day" name="daycount" placeholder="Data zakupu">
+          <button type="submit" name="btn-count-day">Licz!</button>
+        </form>
+        <div class="display-count-day"></div>
+      </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="script/days.js"></script>

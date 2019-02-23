@@ -1,0 +1,16 @@
+.info {
+  padding: 5px;
+}
+.info p {
+  font-size: small;
+}
+.info ul {
+  font-size: small;
+  list-style-type: circle;
+}
+
+.div-count-day .display-count-day p {
+  font-size: small;
+}
+
+/*# sourceMappingURL=master.css.map */
