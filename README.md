@@ -9,7 +9,7 @@
 * Skrypt korzysta z bibliotek moment.js (https://momentjs.com/).
 
 ### Znane błędy
-* na razie brak
+* data admina to format D.MM.YYYY nie DD.MM.YYYY; skrypt nie wyrzuca błędu, ale w pewnym momencie może zacząć
 
 ### Propozycje zmian
 * na razie brak
