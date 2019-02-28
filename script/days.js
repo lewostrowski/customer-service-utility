@@ -4,6 +4,14 @@ const spanDate = () => {
   document.querySelector("#span-actual").innerHTML = spanActual
 }
 
+const changeDateFormat = (day) => {
+  if (day < 10) {
+   return day = "0" + day
+ } else {
+   return day
+ }
+}
+
 spanDate()
 const interval1 = setInterval(spanDate, 60000)
 
@@ -16,7 +24,7 @@ document.querySelector(".form-count-day").addEventListener("submit", (e) => {
   let date = e.target.daycount.value
     if (date.includes(".")) {
       dateSplit = date.split(".")
-      date = `${dateSplit[2]}-${dateSplit[1]}-${dateSplit[0]}`
+      date = `${dateSplit[2]}-${dateSplit[1]}-${changeDateFormat(dateSplit[0])}`
     }
 
   let now = moment().diff(date, "days")
