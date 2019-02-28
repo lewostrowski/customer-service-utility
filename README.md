@@ -17,5 +17,5 @@
 
 ### Zmiany w wersji
 W wersji 1.1
-* dodano funkcję zmieniającą format z D.MM.YYYY na 0D.MM.YYYY w przypadku DD < 10
+* dodano funkcję zmieniającą format z D.MM.YYYY na 0D.MM.YYYY w przypadku D < 10
 * rozszerzono informacje o możliwych formatach dat
