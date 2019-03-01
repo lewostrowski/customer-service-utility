@@ -13,7 +13,7 @@
 * na razie brak
 
 ### Propozycje zmian
-* na razie brak
+* bardziej czytelny tytuł skryptu w karcie
 
 ### Zmiany w wersji
 W wersji 1.1
